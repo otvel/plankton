@@ -1,0 +1,8 @@
+min_train_size: 0
+my_augmentation: False
+keras_augmentation: False
+target_shape: (128, 128, 1)
+padding: ruling_gray
+max_epochs: 100
+batch_size: 64
+optimizer: adam

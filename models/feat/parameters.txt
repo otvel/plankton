@@ -1,0 +1,10 @@
+min_train_size: 500
+my_augmentation: False
+keras_augmentation: True
+target_shape: (128, 128, 3)
+feature_shape: 8192
+padding: ruling_gray
+
+# SimpleFF
+batch_size: 128
+max_epochs: 100

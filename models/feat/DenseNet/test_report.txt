@@ -1,0 +1,49 @@
+                                         precision    recall  f1-score   support
+
+                Aphanizomenon_flosaquae       0.97      0.90      0.93      1087
+                                  Beads       0.97      0.97      0.97        39
+                           Centrales_sp       0.78      0.83      0.80       120
+                         Chaetoceros_sp       0.93      0.84      0.88       336
+                          Chroococcales       0.93      0.74      0.82        34
+                      Chroococcus_small       0.88      0.98      0.92       206
+                     Ciliata_strawberry       0.92      0.89      0.90        37
+                        Cryptomonadales       0.67      0.66      0.67       145
+                     Cryptophyceae_drop       0.83      0.94      0.88       896
+                    Cryptophyceae_small       0.59      0.56      0.57       128
+           Cyclotella_choctawhatcheeana       0.68      0.68      0.68        25
+             Cymbomonas_tetramitiformis       0.85      0.83      0.84        48
+                              Cyst_like       0.84      0.97      0.90        39
+                Dino_small_funny_shaped       0.80      0.71      0.75       932
+                   Dinophyceae_under_20       0.71      0.70      0.70       356
+                   Dinophysis_acuminata       0.79      0.98      0.87        45
+            Dolichospermum_Anabaenopsis       0.95      0.97      0.96      1438
+Dolichospermum_Anabaenopsis_round_curly       0.93      0.90      0.91       207
+                        Eutreptiella_sp       0.87      0.86      0.87       479
+                       Gymnodinium_like       0.26      0.74      0.39        38
+                  Heterocapsa_rotundata       0.69      0.76      0.73       220
+                  Heterocapsa_triquetra       0.85      0.90      0.87       801
+                             Heterocyte       0.97      0.88      0.93        77
+                      Mesodinium_rubrum       0.75      0.89      0.81       178
+             Mesodinium_rubrum_shrunken       0.93      0.65      0.76       105
+                Monoraphidium_contortum       1.00      1.00      1.00        82
+                    Nodularia_spumigena       0.41      0.86      0.55        42
+                            Oocystis_sp       0.95      0.93      0.94       210
+                        Oscillatoriales       0.98      0.99      0.99      1107
+                     Pauliella_taeniata       0.91      1.00      0.95        29
+                     Pennales_sp._basic       0.95      0.93      0.94       195
+                      Pennales_sp._boxy       0.71      0.80      0.75        45
+            Peridiniella_catenata_chain       0.89      0.98      0.93        48
+           Peridiniella_catenata_single       0.90      0.92      0.91       224
+                  Prorocentrum_cordatum       0.92      0.87      0.90        69
+                     Pseudopedinella_sp       0.85      0.68      0.76       216
+                         Pyramimonas_sp       0.81      0.95      0.87       545
+                    Skeletonema_marinoi       0.99      0.96      0.97      1036
+        Snowella_Woronichinia_sp._dense       0.93      0.93      0.93       737
+        Snowella_Woronichinia_sp._loose       0.85      0.84      0.84       329
+                           Teleaulax_sp       0.82      0.50      0.62       449
+                Thalassiosira_levanderi       0.89      0.93      0.91       713
+                        Uroglenopsis_sp       0.96      0.96      0.96       102
+
+                               accuracy                           0.88     14194
+                              macro avg       0.84      0.85      0.84     14194
+                           weighted avg       0.89      0.88      0.88     14194
