@@ -20,7 +20,7 @@ parser.add_argument('-m', '--model', required=True,
 parser.add_argument('-i', '--images', required=True,
     help='Path to image folder')
 parser.add_argument('-l', '--labels', required=True,
-    help='Path to list of labels')
+    help='Path to list of labels (output/class_names.txt)')
 parser.add_argument('-c', '--count',
     help='How many images to predict')
 parser.add_argument('-f', '--feature_extractor',

@@ -162,29 +162,33 @@ def test_paths_to_images(split_data, test_dir_path):
 def main():
     """Comment out parts that you don't want to run"""
 
-    ## Dataset preparation, 56843 
+    # Dataset preparation (56843 images in final syke-dataset) 
     original_dataset = '/home/otso/Datasets/SYKE_150819'
     new_dataset = '/home/otso/Datasets/syke'
     dirs_excluded = ['summary', 'Unclassified']
     prepare_dataset(original_dataset, new_dataset, dirs_excluded)
 
-    ## Split image paths
+    # Split image paths
     dataset = '/home/otso/Datasets/syke'
     split_data_path = 'output/split_data.pickle'
-    split_data = get_split_data(dataset, split_data_path, new=True)
-    test_paths_to_images(split_data, 'test_images')
+    split_data = get_split_data(dataset, split_data_path, new=False)
     
-    output_dir = f'models/test'
+    # Copy test images to separate directory for testing purposes
+    test_paths_to_images(split_data, '/home/otso/Datasets/syke_test')
+    
+    # Define model path
+    output_dir = 'models/test'
     os.makedirs(output_dir, exist_ok=True)
     save_metrics = True
 
-    ## MyLeNet, MyCNN
+    # Train MyLeNet or MyCNN
     fit_model('MyLeNet', split_data, output_dir, save_metrics)
 
-    ## Feature extraction
+    # Extract features (transfer learning)
     model_name = 'VGG19'
     transfer_learning.extract_features(model_name, split_data, 
                                        output_dir, save_metrics)
+    # Train simple neural network on features
     db_path = f'models/feat/{model_name}/features.h5'
     transfer_learning.simple_feed_forward('SFF', db_path, output_dir, save_metrics)
 
